@@ -1,3 +1,9 @@
+
+
+let gif;
+
+function preLoad (assets/Meteor.gif)
+
 function setup() {
   createCanvas(windowWidth, windowHeight); 
   strokeWeight(8);
@@ -7,7 +13,7 @@ function setup() {
   
 function draw() {
 
-  var num = 2
+  var num = 8
   
   var sideLen = windowWidth
 
@@ -18,10 +24,7 @@ function draw() {
     
     
     for (var x = 0; x < windowWidth; x = x + sideLen) {
-  quad (x,y,
-    x + sideLen,y,
-    x + sideLen,y + sideLen,
-    x,y + sideLen);
+ image (gif, x, y, sideLen,sideLen);
     
   }
     }
