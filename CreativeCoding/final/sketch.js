@@ -3,11 +3,11 @@
 let gif;
 
 function preLoad () { 
-gif = loadImage (' assets/Meteor.gif ');
+gif = loadImage (' assets/Meteor.gif');
 
 }
 function setup() {
-  createCanvas(windowWidth, windowHeight); 
+  createCanvas (windowWidth, windowHeight); 
   fill('lightgrey');
   stroke ('white');
   strokeWeight (1);
