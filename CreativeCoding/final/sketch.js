@@ -1,32 +1,42 @@
+
+
+let gif;
+
+function preLoad () { 
+gif = loadImage (' assets/Meteor.gif ');
+
+}
 function setup() {
   createCanvas(windowWidth, windowHeight); 
-  strokeWeight(8);
-
-  fill('green');  
+  fill('lightgrey');
+  stroke ('white');
+  strokeWeight (1);
+ 
 }
   
 function draw() {
 
-  var num = 2
+background ('255,255,255  ');  
   
-  var sideLen = windowWidth
+  
+var num = 8
+  
+var sideLen = windowWidth
 
-  var sideLen = windowWidth/num;
+var sideLen = windowWidth/num;
   
   
     for (var y = 0; y < windowHeight; y = y + sideLen) {
     
     
     for (var x = 0; x < windowWidth; x = x + sideLen) {
-  quad (x,y,
-    x + sideLen,y,
-    x + sideLen,y + sideLen,
-    x,y + sideLen);
+ image (gif, x, y, sideLen,sideLen);
+}
     
-  }
-    }
 
 }
-function windowResized(){
+
+}
+function windowResized (){
   resizeCanvas (windowWidth, windowHeight);
 }
