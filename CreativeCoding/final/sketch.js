@@ -3,7 +3,7 @@
 let gif;
 
 function preLoad () { 
-gif = loadImage (' assets/Meteor.gif');
+gif = loadImage (' assets/meteor.gif');
 
 }
 function setup() {
